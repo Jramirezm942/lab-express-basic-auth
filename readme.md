@@ -35,14 +35,14 @@ In this exercise, we are going to create a project where we will have all the ba
 After forking and cloning the project, you will have to add a `starter_code/.env` file:
 
 ```
-PORT=3000
+PORT=3001
 ```
 
-And you have to install all the dependencies:
+And you have to install all the dependencies on both folders client and server:
 
 
 ```sh
-$ cd starter_code
+$ cd starter_code/server  cd starter_code/client
 $ npm install
 ```
 
@@ -64,7 +64,7 @@ Remember that you have to handle validation errors when a user signs up:
 
 ## Iteration 2 - Login
 
-Once the user has signed up, he has to be able to log in the application. You have to create the view and add the correct functionality in the controller to let them log in the application.
+Once the user has signed up, he has to be able to login the application. You have to create the view and add the correct functionality in the controller to let them log in the application.
 
 Once the user has logged in, you have to create a session with `express-session` and `connect-mongo`.
 
@@ -91,7 +91,7 @@ Check out the [documentation](https://developer.mozilla.org/en-US/docs/Learn/HTM
 
 ## Bonus - Password Strength Measurement
 
-Finally, we will add a jQuery plugin to measure the password strength when we sign up in the application. We recommend you to use the [Strength.js](http://jquerycards.com/forms/inputs/strength-js/) library, but feel free to look for another one.
+Finally, we will have to measure the password strength when we sign up in the application. We recommend you to use vanilla javascript.
 
 Once finished, the result should be something like this:
 
